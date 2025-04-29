@@ -1,0 +1,262 @@
+/* Algemene instellingen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f5f1; /* lichte crème achtergrond */
+    color: #3e2723; /* chocoladebruin tekst */
+    overflow-x: hidden;
+}
+
+/* Navigatiebar */
+.navbar {
+    background-color: #212121; /* donkergrijs/zwart */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo of titel */
+.nav-left h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Georgia', serif;
+    color: #fff8e1;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+/* Dropdown menu */
+.nav-right {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ff9800;
+    color: #212121;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #ffa726;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    z-index: 1001;
+}
+
+.dropdown-content a {
+    color: #fdfdfd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Inhoud container */
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Formulieren */
+.form-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #6d4c41;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    color: #212121;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #ff9800;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffa726;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ffe0b2;
+    color: #3e2723;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Status/actie knoppen */
+.btn-status {
+    background-color: #4caf50;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-status:hover {
+    background-color: #388e3c;
+}
+
+.btn-verwijder {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-verwijder:hover {
+    background-color: #d32f2f;
+}
+
+/* Footer */
+.footer {
+    background-color: #212121;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact, .footer-social {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+
+.footer h3 {
+    color: #ff9800;
+    font-size: 1.3rem;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+
